@@ -64,24 +64,14 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("👀")
-        await asyncio.sleep(0.5)
-        await m.edit_text("⚡")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
-        await asyncio.sleep(0.4)
-        await m.delete()        
-        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
-        await asyncio.sleep(1)
-        await m.delete()
-        await message.reply_text(
-            text="<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {message.from_user.id}..</b>",
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        return
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
+        await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
+        if not await db.get_chat(message.chat.id):
+            total=await client.get_chat_members_count(message.chat.id)
+            await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
+            await db.add_chat(message.chat.id, message.chat.title)
+        return 
         
     if AUTH_CHANNEL and not await is_req_subscribed(client, message):
         try:
@@ -133,24 +123,14 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("👀")
-        await asyncio.sleep(0.5)
-        await m.edit_text("⚡")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
-        await asyncio.sleep(0.4)
-        await m.delete()        
-        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
-        await asyncio.sleep(1)
-        await m.delete()
-        await message.reply_text(
-            text="<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {message.from_user.id}..</b>",
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        return
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
+        await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
+        if not await db.get_chat(message.chat.id):
+            total=await client.get_chat_members_count(message.chat.id)
+            await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
+            await db.add_chat(message.chat.id, message.chat.title)
+        return 
         
         
     if len(message.command) == 2 and message.command[1] in ["premium"]:
