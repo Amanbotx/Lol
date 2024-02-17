@@ -76,8 +76,7 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
         await asyncio.sleep(1)
         await m.delete()
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await message.edit_text(
             text=script.PURCHASE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -146,8 +145,7 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
         await asyncio.sleep(1)
         await m.delete()
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await message.edit_text(
             text=script.PURCHASE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
