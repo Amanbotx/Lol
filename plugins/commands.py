@@ -76,8 +76,8 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
         await asyncio.sleep(1)
         await m.delete()
-        await message.edit_text(
-            text=script.PURCHASE_TXT.format(query.from_user.mention),
+        await message.reply_text(
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -145,8 +145,8 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
         await asyncio.sleep(1)
         await m.delete()
-        await message.edit_text(
-            text=script.PURCHASE_TXT.format(query.from_user.mention),
+        await message.reply_text(
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
