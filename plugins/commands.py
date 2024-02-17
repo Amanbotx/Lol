@@ -77,7 +77,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {}..</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -146,7 +146,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {}..</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
