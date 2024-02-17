@@ -77,7 +77,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_text(
-            text=f"<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {}..</b>",
+            text="<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {message.from_user.id}..</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -146,7 +146,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_text(
-            text=f"<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {}..</b>",
+            text="<b>ʜᴇʏ {message.from_user.mention}, {gtxt}\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nyour ib- {message.from_user.id}..</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
