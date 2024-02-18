@@ -1535,7 +1535,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('• FEATURES •', callback_data='help'),
                     InlineKeyboardButton('✨ PREMIUM ✨', callback_data="seeplans")
                 ],[
-                    InlineKeyboardButton('💸 EARN MONEY WITH BOT 💸', callback_data="shortlink_info")
+                    InlineKeyboardButton('💸 EARN MONEY WITH BOT 💸', callback_data="broze")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1932,49 +1932,56 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "shortlink_info":
-            btn = [[
-            InlineKeyboardButton("1 / 3", callback_data="pagesn1"),
-            InlineKeyboardButton("ɴᴇxᴛ ⋟", callback_data="shortlink_info2")
-            ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
-            ]]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_text(
-            text=script.SHORTLINK_INFO.format(query.from_user.mention),
+    
+    elif query.data == "broze":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='free'),
+            InlineKeyboardButton('2 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='silver')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.BRONZE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-            )   
-    elif query.data == "shortlink_info2":
-            btn = [[
-            InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="shortlink_info"),
-            InlineKeyboardButton("2 / 3", callback_data="pagesn1"),
-            InlineKeyboardButton("ɴᴇxᴛ ⋟", callback_data="shortlink_info3")
-            ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
-            ]]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_text(
-            text=script.SHORTLINK_INFO2.format(query.from_user.mention),
+        )
+    elif query.data == "broze":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='free'),
+            InlineKeyboardButton('2 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='silver')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.BRONZE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-            )
-    elif query.data == "shortlink_info3":
-            btn = [[
-            InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="shortlink_info2"),
-            InlineKeyboardButton("3 / 3", callback_data="pagesn1")
-            ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
-            ]]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_text(
-            text=script.SHORTLINK_INFO3.format(query.from_user.mention),
+        )
+    elif query.data == "broze":
+        buttons = [[
+            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='free'),
+            InlineKeyboardButton('2 / 7', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='silver')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.BRONZE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-            )   
+        )
+
     
     elif query.data == "disclaimer":
             btn = [[
