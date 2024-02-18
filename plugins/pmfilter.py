@@ -1599,7 +1599,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "seeplans":
         btn = [[
-            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', bot_id=int(6709131183))
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', url='https://t.me/YD_OWNER_BOT')
+        ],[
+            InlineKeyboardButton('⚜️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ', callback_data="give_trial")
+        
         ],[
             InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
         ]]
@@ -1626,168 +1629,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 disable_web_page_preview=True,                  
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='seeplans')]]))
             return    
-
-    elif query.data == "premium_info":
-        buttons = [[
-            InlineKeyboardButton('• ꜰʀᴇᴇ ᴛʀɪᴀʟ •', callback_data='free')
-        ],[
-            InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
-            InlineKeyboardButton('• ꜱɪʟᴠᴇʀ •', callback_data='silver')
-        ],[
-            InlineKeyboardButton('• ɢᴏʟᴅ •', callback_data='gold'),
-            InlineKeyboardButton('• ᴘʟᴀᴛɪɴᴜᴍ •', callback_data='platinum')
-        ],[
-            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='diamond'),
-            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
-        ],[            
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
-        ]]
-        
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.PLAN_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "free":
-        buttons = [[
-            InlineKeyboardButton('⚜️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ', callback_data="give_trial")
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='other'),
-            InlineKeyboardButton('1 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='broze')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.FREE_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    
-    elif query.data == "broze":
-        buttons = [[
-            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='free'),
-            InlineKeyboardButton('2 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='silver')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.BRONZE_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "silver":
-        buttons = [[
-            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='broze'),
-            InlineKeyboardButton('3 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='gold')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SILVER_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "gold":
-        buttons = [[
-            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='silver'),
-            InlineKeyboardButton('4 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='platinum')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.GOLD_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "platinum":
-        buttons = [[
-            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='gold'),
-            InlineKeyboardButton('5 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='diamond')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.PLATINUM_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    
-    elif query.data == "diamond":
-        buttons = [[
-            InlineKeyboardButton('🔐 ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='purchase')
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='platinum'),
-            InlineKeyboardButton('6 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='other')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.DIAMOND_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "other":
-        buttons = [[
-            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(767250672))
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
-            InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='free')
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.OTHER_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    
-  
-    elif query.data == "channels":
-        buttons = [[
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/HP_MOVIES_WORLD')
-        ],[
-            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/MoviesLinkSearchBot2'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/MoviesLinkSearchBot3')
-        ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/HpMovieRequest')
-        ],[
-            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CHANNELS.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
 
     elif query.data == "users":
         buttons = [[
@@ -1832,18 +1673,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         
 
-    elif query.data == "admic":
-        if query.from_user.id not in ADMINS:
-            return await query.answer("⚠️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ʙᴏᴛ ᴀᴅᴍɪɴ !", show_alert=True)        
-        buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ADMIC_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     
 
     elif query.data == "help":
@@ -1862,38 +1692,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "about":
-        buttons = [[
-            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
-        ], [
-            InlineKeyboardButton ('• ᴄʀᴇᴅɪᴛꜱ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ •', callback_data='credits'),
-        ], [
-            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(5977931010)),
-            InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
-        ], [
-            InlineKeyboardButton('🛰️ ʀᴇɴᴅᴇʀɪɴɢ ꜱᴛᴀᴛᴜꜱ ☁️',callback_data='rendr')
-        ], [
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "rendr":
-        await query.answer("⚡️ ʟɪᴠᴇ sʏsᴛᴇᴍ sᴛᴀᴛᴜs ⚡️\n\n❂ ʀᴀᴍ ●●●●●●●◌◌◌\n✇ ᴄᴘᴜ ●●●●●●●◌◌◌\n✪ ᴅᴀᴛᴀ ᴛʀᴀꜰɪᴄs ●●●●◌◌◌◌◌◌ 🛰\n\nᴠ4.2 [sᴛᴀʙʟᴇ] """, show_alert=True)
-
-    elif query.data == "credits":
-        buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CREDITS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     
     elif query.data == "stats":
         buttons = [[
