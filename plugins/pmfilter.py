@@ -1932,12 +1932,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "shortlink_info":
+        elif query.data == "shortlink_info":
             btn = [[
-            InlineKeyboardButton('• 📸TELEGRAF •', callback_data='users')
+            InlineKeyboardButton("1 / 3", callback_data="pagesn1"),
+            InlineKeyboardButton("ɴᴇxᴛ ⋟", callback_data="shortlink_info2")
             ],[
-            InlineKeyboardButton('• 🚩COUNTRY •', callback_data='group'),
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1951,7 +1952,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("2 / 3", callback_data="pagesn1"),
             InlineKeyboardButton("ɴᴇxᴛ ⋟", callback_data="shortlink_info3")
             ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1964,7 +1966,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="shortlink_info2"),
             InlineKeyboardButton("3 / 3", callback_data="pagesn1")
             ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
