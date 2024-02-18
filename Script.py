@@ -449,7 +449,7 @@ special Thanks To ❤️ Developer -
     RING_TXT = """<b>👋 ʜᴇʏ {},
     Ringtone
     Phone Ringtone
-» 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/ringtone Ram Ram}</code> ."""
+» 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>/ringtone Ram Ram</code> ."""
     
     FONT_TXT = """<b>👋 ʜᴇʏ {},
     𝙵𝙾𝙽𝚃 𝙼𝙾𝙳𝚄𝙻𝙴
@@ -458,7 +458,7 @@ special Thanks To ❤️ Developer -
 
 » 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
 
-➪ <code>{/font [your text]}</code>."""
+➪ <code>/font hi how are you</code>."""
     
     TGRAPH_TXT = """<b>👋 ʜᴇʏ {},
     ᴛᴇʟᴇɢʀᴀᴘʜ ᴍᴏᴅᴜʟᴇ
@@ -467,14 +467,14 @@ special Thanks To ❤️ Developer -
 
 » 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
 Picture or Video Under (5MB)
- ➪ <code>{/telegraph}</code> ."""
+ ➪ <code>/telegraph</code> ."""
  
     COMMENT_TXT = """<b>👋 ʜᴇʏ {},
     𝗖𝗼𝘂𝗻𝘁𝗿𝘆  𝗜𝗻𝗳𝗼
 
 ᴛʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ꜰɪɴᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs
 
-   𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/COUNTRY INDIA}</code> ."""
+   𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>/COUNTRY INDIA</code> ."""
 
 
 
