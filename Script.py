@@ -471,6 +471,4 @@ Picture or Video Under (5MB)
 
 ᴛʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ꜰɪɴᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs
 
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
-
-➪ <code>{/COUNTRY INDIA}</code>"""
+    ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/COUNTRY INDIA}</code>"""
