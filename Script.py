@@ -22,8 +22,7 @@ class script(object):
 ‣ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>{}</code>
 ‣ ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ : <code>{}</code>
 ‣ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
-‣ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
-</b>"""
+‣ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code></b>"""
 
     LOG_TEXT_G = """#NewGroup
     
@@ -447,3 +446,31 @@ special Thanks To ❤️ Developer -
 
 -Dev [Owner of this bot ]<a href='https://t.me/DeletedFromEarth'>HP</a>
 """
+    RING_TXT = """<b>Ringtone
+Phone Ringtone
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/ringtone Ram Ram}</code> .</b>"""
+    
+    FONT_TXT = """𝙵𝙾𝙽𝚃 𝙼𝙾𝙳𝚄𝙻𝙴
+
+𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙲𝙷𝙰𝙽𝙶𝙴 𝙵𝙾𝙽𝚃 𝚂𝚃𝚈𝙻𝙴
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ <code>{/font [your text]}</code>."""
+    
+    TGRAPH_TXT = """ᴛᴇʟᴇɢʀᴀᴘʜ ᴍᴏᴅᴜʟᴇ
+
+ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ ᴀɴʏ ɪᴍᴀɢᴇ ᴏʀ ᴠɪᴅᴇᴏ ɪɴᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ.
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+Picture or Video Under (5MB)
+ ➪ <code>{/telegraph}</code>
+ 
+    COMMENT_TXT = """
+    𝗖𝗼𝘂𝗻𝘁𝗿𝘆  𝗜𝗻𝗳𝗼
+
+ᴛʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ꜰɪɴᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ <code>{/COUNTRY INDIA}</code>"""
