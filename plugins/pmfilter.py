@@ -1780,7 +1780,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/HpMovieRequest')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/HpRequestBot')
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1935,6 +1935,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "A":
         buttons = [[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
+        ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='C'),
             InlineKeyboardButton('3 / 2', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='B')
@@ -1949,6 +1951,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "B":
         buttons = [[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
+        ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='A'),
             InlineKeyboardButton('1 / 3', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='C')
@@ -1963,6 +1967,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "C":
         buttons = [[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
+        ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='B'),
             InlineKeyboardButton('2 / 1', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='A')
