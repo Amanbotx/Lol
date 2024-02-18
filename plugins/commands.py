@@ -104,8 +104,7 @@ async def start(client, message):
                     InlineKeyboardButton('• FEATURES •', callback_data='help'),
                     InlineKeyboardButton('✨ PREMIUM ✨', callback_data="seeplans")
                 ],[
-                    InlineKeyboardButton('💸 FEATURES PREMIUM
-EARN MONEY WITH BOT 💸', callback_data="shortlink_info")
+                    InlineKeyboardButton('💸 EARN MONEY WITH BOT 💸', callback_data="shortlink_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
