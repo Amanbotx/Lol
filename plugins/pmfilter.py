@@ -1940,11 +1940,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
             ]]
-            reply_markup = InlineKeyboardMarkup(btn)
+            reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_text(
-                text=(script.SHORTLINK_INFO),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
+            text=script.SHORTLINK_INFO.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
             )   
     elif query.data == "shortlink_info2":
             btn = [[
@@ -1955,11 +1955,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
             ]]
-            reply_markup = InlineKeyboardMarkup(btn)
+            reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_text(
-                text=(script.SHORTLINK_INFO2),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
+            text=script.SHORTLINK_INFO2.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "shortlink_info3":
             btn = [[
@@ -1969,11 +1969,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/+cZGisR7lHeg1ZDdl')
             ]]
-            reply_markup = InlineKeyboardMarkup(btn)
+            reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_text(
-                text=(script.SHORTLINK_INFO3),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
+            text=script.SHORTLINK_INFO3.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
             )   
     
     elif query.data == "disclaimer":
