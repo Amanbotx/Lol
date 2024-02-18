@@ -448,13 +448,13 @@ special Thanks To ❤️ Developer -
 """
     RING_TXT = """<b>Ringtone
 Phone Ringtone
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/ringtone Ram Ram}</code> .</b>"""
+» 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/ringtone Ram Ram}</code> .</b>"""
     
     FONT_TXT = """𝙵𝙾𝙽𝚃 𝙼𝙾𝙳𝚄𝙻𝙴
 
 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙲𝙷𝙰𝙽𝙶𝙴 𝙵𝙾𝙽𝚃 𝚂𝚃𝚈𝙻𝙴
 
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+» 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
 
 ➪ <code>{/font [your text]}</code>."""
     
@@ -462,7 +462,7 @@ Phone Ringtone
 
 ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ ᴀɴʏ ɪᴍᴀɢᴇ ᴏʀ ᴠɪᴅᴇᴏ ɪɴᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ.
 
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+» 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
 Picture or Video Under (5MB)
  ➪ <code>{/telegraph}</code>
  
@@ -471,4 +471,4 @@ Picture or Video Under (5MB)
 
 ᴛʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ꜰɪɴᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs
 
-    ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/COUNTRY INDIA}</code>"""
+    » 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <code>{/COUNTRY INDIA}</code>"""
