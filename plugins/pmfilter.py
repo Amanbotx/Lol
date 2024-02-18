@@ -1932,7 +1932,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        elif query.data == "shortlink_info":
+    elif query.data == "shortlink_info":
             btn = [[
             InlineKeyboardButton("1 / 3", callback_data="pagesn1"),
             InlineKeyboardButton("ɴᴇxᴛ ⋟", callback_data="shortlink_info2")
