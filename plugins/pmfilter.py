@@ -1736,8 +1736,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data=''),
-            InlineKeyboardButton('D / B', callback_data='pagesn1'),
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='D'),
+            InlineKeyboardButton('A/D', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='B')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
@@ -1753,7 +1753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='A'),
-            InlineKeyboardButton('A / C', callback_data='pagesn1'),
+            InlineKeyboardButton('B/C', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='C')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
@@ -1769,7 +1769,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='B'),
-            InlineKeyboardButton('B / D', callback_data='pagesn1'),
+            InlineKeyboardButton('C/B', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='D')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
@@ -1787,7 +1787,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='C'),
-            InlineKeyboardButton('C / A', callback_data='pagesn1'),
+            InlineKeyboardButton('D/A', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='A')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
