@@ -1736,8 +1736,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='C'),
-            InlineKeyboardButton('3 / 2', callback_data='pagesn1'),
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data=''),
+            InlineKeyboardButton('D/B', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='B')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
@@ -1753,7 +1753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='A'),
-            InlineKeyboardButton('1 / 3', callback_data='pagesn1'),
+            InlineKeyboardButton('A/C', callback_data='pagesn1'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='C')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
@@ -1769,8 +1769,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='B'),
-            InlineKeyboardButton('2 / 1', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='A')
+            InlineKeyboardButton('B/D', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='D')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
         ]]
@@ -1780,6 +1780,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+
+    elif query.data == "D":
+        buttons = [[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/YD_OWNER_BOT')
+        ],[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='C'),
+            InlineKeyboardButton('C/A', callback_data='pagesn1'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='A')
+        ],[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.AMANN_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+                   )
 
     
     elif query.data == "disclaimer":
