@@ -1,8 +1,8 @@
 import motor.motor_asyncio
 from info import DATABASE_NAME, DATABASE_URI
 
-DATABASE_NAME = DB_NAME
-DATABASE_URI = DB_URI
+DATABASE_NAME = DATABASE_NAME
+DATABASE_URI = DATABASE_URI
 
 
 class Database:
