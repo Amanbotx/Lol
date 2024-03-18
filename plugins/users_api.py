@@ -7,8 +7,8 @@ from info import DATABASE_URI, DATABASE_NAME
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-client = AsyncIOMotorClient(DB_URI)
-db = client[DB_NAME]
+client = AsyncIOMotorClient(DATABASE_URI)
+db = client[DATABASE_NAME]
 col = db["users"]
 
 # Don't Remove Credit Tg - @VJ_Botz
